@@ -1,0 +1,38 @@
+# Board: AZ-Delivery ESP-32 Dev Kit C V4
+# Definition: definitions/boards/az-delivery-devkit-v4/manifest.yaml
+
+esphome:
+  name: bluetooth-proxy-1
+  friendly_name: Bluetooth Proxy 1
+  name_add_mac_suffix: false
+
+esp32:
+  variant: esp32
+
+logger:
+
+api:
+  encryption:
+    key: "[secret]"
+
+mqtt:
+  broker: 10.10.0.252
+  port: 1883
+  username: homeassistant
+  password: homeassistant
+
+ota:
+  - platform: esphome
+
+
+
+captive_portal:
+
+wifi:
+  ssid: [secret]
+  password: [secret]
+
+esp32_ble_tracker:
+
+bluetooth_proxy:
+  active: true
