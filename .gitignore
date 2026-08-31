@@ -1,0 +1,15 @@
+# Home Assistant secrets and credentials
+secrets.yaml
+.storage/
+auth
+auth_provider.homeassistant
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
