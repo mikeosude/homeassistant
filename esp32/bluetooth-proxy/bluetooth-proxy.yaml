@@ -13,13 +13,13 @@ logger:
 
 api:
   encryption:
-    key: "[secret]"
+    key: "[encryption key]"
 
 mqtt:
   broker: 10.10.0.252
   port: 1883
-  username: homeassistant
-  password: homeassistant
+  username: [mqtt username]
+  password: [mqtt password]
 
 ota:
   - platform: esphome
@@ -29,8 +29,8 @@ ota:
 captive_portal:
 
 wifi:
-  ssid: [secret]
-  password: [secret]
+  ssid: [wifi ssid]
+  password: [wifi password]
 
 esp32_ble_tracker:
 
